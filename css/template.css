@@ -10,3 +10,28 @@ body {
 h1, h2, h3, h4, h5 ,h6 {
 	font-family: 'Walter Turncoat', cursive;
 }
+
+.footer {
+	margin-top: 75px;
+	background-color: #eee;
+	height: 100px;
+	padding-top: 35px;
+}
+
+.footer .container {
+	text-align: center;
+	font-size: 14px;
+}
+
+.jumbotron h1 .pull-right {
+	font-size: 18px;
+}
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.center {
+	text-align: center;
+}

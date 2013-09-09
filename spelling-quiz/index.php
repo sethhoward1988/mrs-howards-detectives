@@ -1,4 +1,4 @@
-<?php include 'template/header.php'; ?>
+<?php include '../template/header.php'; ?>
     <link href="/css/spelling.css" rel="stylesheet" />
     <div class="jumbotron">
        <div class="container">
@@ -26,4 +26,4 @@
      </div>
      <script type="text/javascript" src="/js/spelling.js"></script>
      <script type="text/javascript" src="/js/spellingData.js"></script>
-  <?php include 'template/footer.php'; ?>
+  <?php include '../template/footer.php'; ?>

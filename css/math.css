@@ -1,0 +1,48 @@
+
+.times-table-answer {
+    width:35px;
+    border: none;
+    background-color: transparent;
+}
+
+.times-table td, .times-table th {
+    border: 1px solid black;
+    text-align: center;
+    width: 35px;
+}
+
+.times-table input {
+    text-align: center;
+}
+
+.active {
+    background-color: #eee;
+}
+
+.active.header {
+    color: white;
+    background-color: black;
+}
+
+input.alert-success {
+    background-color: #dff0d8 !important;
+}
+
+input.alert-warning {
+    background-color: #fcf8e3;
+}
+
+.active input.alert-success {
+    background-color: #eee !important;
+    color: black;
+}
+
+.times-table {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.times-table table {
+    margin: 0 auto;
+}

@@ -12,10 +12,6 @@ audio {
 	vertical-align: middle;
 }
 
-.jumbotron h1 .pull-right {
-	font-size: 18px;
-}
-
 .word-container {
 	margin-left: 50px; 
 }
@@ -34,22 +30,6 @@ audio {
 
 button {
 	width: 250px;
-	text-align: center;
-}
-
-.footer {
-	margin-top: 75px;
-	background-color: #eee;
-	height: 100px;
-	padding-top: 35px;
-}
-
-.footer .container {
-	text-align: center;
-	font-size: 14px;
-}
-
-.center {
 	text-align: center;
 }
 
@@ -74,11 +54,6 @@ button {
 
 .peek {
     font-size: 30px;
-}
-
-.navbar {
-    border-radius: 0px;
-    margin-bottom: 0px;
 }
 
 .definition {

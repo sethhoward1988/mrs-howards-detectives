@@ -141,7 +141,7 @@ function buildWordSet () {
 
 function sendEmail () {
     $.ajax({
-        url:'mail.php',
+        url:'/mail.php',
         type: 'POST',
         data: {
             subject: $('.name').val() + "'s Spelling Quiz Results",
