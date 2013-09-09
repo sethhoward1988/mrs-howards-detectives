@@ -1,0 +1,5 @@
+group1 = ['sign', 'groan', 'reply', 'thrown', 'strike']
+group2 = ['mighty', 'stroll', 'compose', 'dough', 'height']
+group3 = ['excite', 'apply', 'slight', 'define', 'odor']
+group4 = ['spider', 'control', 'silent', 'brighten', 'approach']
+data = [group1, group2, group3, group4]
