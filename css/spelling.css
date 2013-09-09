@@ -1,0 +1,87 @@
+
+.word input {
+	width: 400px;
+	font-size: 30px;
+	padding:15px;
+	font-family: 'Indie Flower', cursive;
+}
+
+audio {
+        width: 215px;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.jumbotron h1 .pull-right {
+	font-size: 18px;
+}
+
+.word-container {
+	margin-left: 50px; 
+}
+
+.alert {
+	vertical-align: middle;
+	display: inline-block;
+	margin-left:20px;
+	font-size: 20px;
+	margin-bottom: 9px;
+}
+
+.word {
+	margin: 20px 0px;
+}
+
+button {
+	width: 250px;
+	text-align: center;
+}
+
+.footer {
+	margin-top: 75px;
+	background-color: #eee;
+	height: 100px;
+	padding-top: 35px;
+}
+
+.footer .container {
+	text-align: center;
+	font-size: 14px;
+}
+
+.center {
+	text-align: center;
+}
+
+.name {
+	width:400px;
+	padding: 10px;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.page-holder {
+	min-height: 510px;
+}
+
+.word button {
+    width: auto;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.peek {
+    font-size: 30px;
+}
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.definition {
+    width: 100%;
+    margin-top:10px;
+}

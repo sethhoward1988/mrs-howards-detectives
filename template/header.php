@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>Learn To Spell</title>
-		<link rel="stylesheet" href="/css/bootstrap.css" />
-		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/bootstrap.min.css" />
+                <link rel="stylesheet" href="/css/template.css" />
 		<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
@@ -15,6 +15,7 @@
             <nav class="navbar navbar-inverse" role="navigation">
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/spelling-quiz/">Spelling Quiz</a></li>
+                    <li><a href="/spelling-quiz/">Spelling</a></li>
+                    <li><a href="/math/">Math</a></li>
                 </ul>
              </nav>

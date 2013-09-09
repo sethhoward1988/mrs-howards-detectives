@@ -1,0 +1,12 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
+
+.jumbotron {
+	font-family: 'Walter Turncoat', cursive;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+	font-family: 'Walter Turncoat', cursive;
+}
