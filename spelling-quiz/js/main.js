@@ -18,6 +18,7 @@ app.totalWords = 20
 
 $(function(){
 	app.wordContainer = $('.word-container')
+        setData()
 	$('#submit').on('click', function () {
 		if($(this).text() == "Send to Mrs. Howard"){
                         sendEmail()
@@ -55,18 +56,20 @@ function changeProgressBar() {
 }
 
 function buildWordSet () {
-	_.each(window.data[app.pageIndex], function (word) {
+	_.each(app.sets[app.pageIndex], function (word) {
 		var container = $('<div class="word"></div>')
-		var audio = $('<audio controls="controls" tabindex="-1"><source src="/spelling-quiz/words/mp3/' + word + '.mp3" type="audio/mpeg"><source src="/spelling-quiz/words/wav/' + word + '.wav" type="audio/wav"></audio>')
+                var row = $('<div class="row"></div>')
+		var audio = $('<audio controls="controls" tabindex="-1"><source src="/spelling-quiz/words/mp3/' + word.word + '.mp3" type="audio/mpeg"><source src="/spelling-quiz/words/wav/' + word.word + '.wav" type="audio/wav"></audio>')
 		var input = $('<input type="text"></input>')
+                var define = $('<button type="button" class="btn-info">Define</button>')
                 var skip = $('<button type="button" class="btn-warning">Skip</button>')
                 var peek = $('<button type="button" class="btn-warning">Peek</button>')
 		var alert = $('<div class="alert"></div>')
                 var peeking = false
                 skip.on('click', function (evt) {
-                    input.val('Skipped')
+                    input.val(word.word)
                     app.finishedWords++
-                    app.skippedWords.push(word)
+                    app.skippedWords.push(word.word)
                     input.attr('readonly', true)
                     input.removeClass('alert-danger alert-success').addClass('alert-warning')
                     skip.fadeOut()
@@ -79,9 +82,9 @@ function buildWordSet () {
                         return
                     }
                     peeking = true
-                    var span = $('<span class="peek"></span>').text(word).hide()
-                    container.append(span)
-                    app.peekedWords.push(word)
+                    var span = $('<span class="peek"></span>').text(word.word).hide()
+                    row.append(span)
+                    app.peekedWords.push(word.word)
                     span.fadeIn(function(){
                         setTimeout(function () {
                             span.fadeOut(function(){
@@ -92,26 +95,35 @@ function buildWordSet () {
                         }, 200)
                     })
                 })
-		app.wordContainer.append(container.append(audio).append(input).append(skip).append(peek).append(alert))
+                
+                define.on('click', function (evt) {
+                    if(!container.find('.definition').length){
+                        var definition = $('<div class="alert alert-info definition"></div>').hide().text('Definition: ' + word.definition)
+                        container.append(definition)
+                        definition.slideDown()
+                    }
+                })
+                row.append(audio).append(input).append(define).append(skip).append(peek).append(alert)
+		app.wordContainer.append(container.append(row))
 		input.on('keyup', function (evt) {
 			if(input.attr('readonly') == 'readonly'){
 				return;
 			}
 			var string = $(this).val()
 			var correct = true;
-			if(string.toLowerCase() == word){
+			if(string.toLowerCase() == word.word){
                                 peek.fadeOut()
                                 skip.fadeOut(function(){
                                     alert.hide().html(returnRandomFromArray(app.messages)).addClass('alert-success').fadeIn()
                                 })
 				input.attr('readonly', true)
 				app.finishedWords++;
-                                app.correctWords.push(word)
+                                app.correctWords.push(word.word)
 				changeProgressBar();
 				return;
 			}
 			for(var i = 0; i < string.length; i++){
-				if(string[i].toLowerCase() != word[i]){
+				if(string[i].toLowerCase() != word.word[i]){
 					correct = false
 				}
 			}
@@ -148,4 +160,11 @@ function returnRandomFromArray(array){
     return array[Math.floor(Math.random() * array.length)];
 }
 
+function setData () {
+    app.currentWeek = _.shuffle(app.currentWeek)
+    app.sets = []
+    while(app.currentWeek.length > 0){
+        app.sets.push(app.currentWeek.splice(0,5))
+    }
+}
 

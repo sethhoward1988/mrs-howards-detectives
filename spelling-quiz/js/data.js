@@ -1,4 +1,4 @@
-currentWeek = [
+app.currentWeek = [
     {
         word: 'sign',
         definition: ' an object, quality, or event whose presence or occurrence indicates the probable presence or occurrence of something else'
@@ -80,9 +80,3 @@ currentWeek = [
         definition:'come near or nearer to (someone or something) in distance'
     }
 ]
-
-group1 = ['sign', 'groan', 'reply', 'thrown', 'strike']
-group2 = ['mighty', 'stroll', 'compose', 'dough', 'height']
-group3 = ['excite', 'apply', 'slight', 'define', 'odor']
-group4 = ['spider', 'control', 'silent', 'brighten', 'approach']
-data = [group1, group2, group3, group4]

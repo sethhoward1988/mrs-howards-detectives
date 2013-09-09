@@ -23,6 +23,6 @@
                   <button id="submit" type="button" class="btn-primary">Next</button>
           </div>
   </div>
-  <script type="text/javascript" src="js/data.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
   <?php include '../footer.php'; ?>

@@ -11,6 +11,7 @@ body {
 }
 
 audio {
+        width: 215px;
 	padding: 10px;
 	vertical-align: middle;
 }
@@ -76,7 +77,7 @@ button {
 }
 
 .word button {
-    width: 50px;
+    width: auto;
     display: inline-block;
     margin-top: 15px;
     margin-left: 15px;
@@ -90,4 +91,9 @@ button {
 .navbar {
     border-radius: 0px;
     margin-bottom: 0px;
+}
+
+.definition {
+    width: 100%;
+    margin-top:10px;
 }
