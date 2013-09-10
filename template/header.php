@@ -13,9 +13,12 @@
 	</head>
 	<body>
             <nav class="navbar navbar-inverse" role="navigation">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/spelling-quiz/">Spelling</a></li>
-                    <li><a href="/math/">Math</a></li>
-                </ul>
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/spelling-quiz/">Spelling</a></li>
+                        <li><a href="/math/">Math</a></li>
+                        <li><a href="/geo/">Geography</a></li>
+                    </ul>
+                </div>
              </nav>

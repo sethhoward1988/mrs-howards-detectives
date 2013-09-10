@@ -1,0 +1,165 @@
+
+svg {
+    margin-top: 25px;
+    border: 1px dashed steelblue;
+}
+
+.subunit {
+    fill: #ccc;
+}
+
+.regions.disabled button {
+    background-color: #ccc;
+    color: black
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.subunit-boundary {
+    fill: none;
+    stroke: #777;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+}
+
+.irrelevant {
+    fill: #ccc !important;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.maine, .pennsylvania, .kentucky, .wisconsin, .arkansas, .nebraska, .arizona, .idaho {
+    fill: #ffdb8f;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.new_hampshire, .connecticut, .virginia, .alabama, .michigan, .texas, .north_dakota, .utah{
+    fill: #ebbbb1;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.california, .south_dakota, .oklahoma, .illinois, .georgia, .new_jersey, .rhode_island{
+    fill: #daadd8;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.nevada, .montana, .kansas, .indiana, .mississippi, .south_carolina, .west_virginia, .vermont {
+    fill: #fffda6;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.alaska, .oregon, .wyoming, .new_mexico, .minnesota, .missouri, .ohio, .north_carolina, .florida, .delaware, .massachusetts{
+    fill: #6ea1d0;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.washington, .colorado, .louisiana, .tennessee, .iowa, .louisiana, .new_york, .maryland, .hawaii {
+    fill: #97c87d;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.subunit.active {
+    fill: white !important;
+    stroke: black;
+}
+
+.subunit.active:hover {
+    fill: #eee !important;
+    cursor: pointer;
+    -moz-transition:all 0s;
+    -webkit-transition:all 0s;
+    -o-transition:all 0s;
+    transition:all 0s;
+}
+
+.subunit.active.clicked {
+    fill: #6ea1d0 !important;
+}
+
+.subunit.completed {
+    fill: green !important;
+    stroke: white;
+}
+
+.subunit.skipped {
+    fill: #fffda6 !important;
+    stroke: white;
+}
+
+.answer-box {
+    width: 250px;
+    position: absolute;
+    top: 700px;
+    left: 1300px;
+    opacity: 0;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.answer-box input {
+    padding-left: 10px;
+    width: 100%;
+    margin: 15px 0px
+}
+
+.answer-box button {
+    margin-right: 15px;
+}
+
+.answer-box h3 {
+    margin: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
